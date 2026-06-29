@@ -1,0 +1,5 @@
+sample,group,short_reads_1,short_reads_2,long_reads,short_reads_platform,long_reads_platform
+M01,high_latitude,data/M01_R1.fastq.gz,data/M01_R2.fastq.gz,,ILLUMINA,
+M02,high_latitude,data/M02_R1.fastq.gz,data/M02_R2.fastq.gz,,ILLUMINA,
+M03,low_latitude,data/M03_R1.fastq.gz,data/M03_R2.fastq.gz,,ILLUMINA,
+

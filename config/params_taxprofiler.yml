@@ -1,0 +1,15 @@
+input: "config/samplesheet_taxprofiler.csv"
+databases: "config/databases_taxprofiler.csv"
+outdir: "results/taxprofiler"
+
+perform_fastqc: true
+perform_shortread_qc: true
+perform_runmerging: true
+perform_multiqc: true
+
+run_kraken2: true
+run_bracken: true
+run_metaphlan: true
+run_kaiju: false
+run_motus: false
+

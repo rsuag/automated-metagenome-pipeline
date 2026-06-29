@@ -1,0 +1,53 @@
+{
+  "sources": [
+    {
+      "name": "nf-core/mag releases",
+      "type": "github_releases",
+      "url": "https://api.github.com/repos/nf-core/mag/releases",
+      "module": "assembly_binning_mag_qc",
+      "adoption_stage": "watch"
+    },
+    {
+      "name": "nf-core/taxprofiler releases",
+      "type": "github_releases",
+      "url": "https://api.github.com/repos/nf-core/taxprofiler/releases",
+      "module": "taxonomic_profiling",
+      "adoption_stage": "watch"
+    },
+    {
+      "name": "GTDB-Tk releases",
+      "type": "github_releases",
+      "url": "https://api.github.com/repos/Ecogenomics/GTDBTk/releases",
+      "module": "genome_taxonomy",
+      "adoption_stage": "watch"
+    },
+    {
+      "name": "CheckM2 releases",
+      "type": "github_releases",
+      "url": "https://api.github.com/repos/chklovski/CheckM2/releases",
+      "module": "mag_quality_control",
+      "adoption_stage": "benchmark"
+    },
+    {
+      "name": "DRAM releases",
+      "type": "github_releases",
+      "url": "https://api.github.com/repos/WrightonLabCSU/DRAM/releases",
+      "module": "functional_annotation",
+      "adoption_stage": "optional"
+    },
+    {
+      "name": "CoverM releases",
+      "type": "github_releases",
+      "url": "https://api.github.com/repos/wwood/CoverM/releases",
+      "module": "abundance_mapping",
+      "adoption_stage": "optional"
+    },
+    {
+      "name": "Nature Methods microbiome search",
+      "type": "rss",
+      "url": "https://www.nature.com/search?journal=nmeth&q=metagenomics",
+      "module": "method_discovery",
+      "adoption_stage": "watch"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+tool,db_name,db_params,db_type,db_path
+kraken2,standard,--quick,short,/path/to/kraken2_standard
+bracken,standard,;-r 150,short,/path/to/bracken_standard
+metaphlan,mpa_vJan25,,short,/path/to/metaphlan_db
+

@@ -1,0 +1,40 @@
+project_name: mangrove_metagenome
+container_profile: docker
+results_dir: results
+work_dir: work
+
+nfcore:
+  mag_version: "5.4.2"
+  taxprofiler_version: "1.2.6"
+
+inputs:
+  mag_samplesheet: config/samplesheet_mag.csv
+  taxprofiler_samplesheet: config/samplesheet_taxprofiler.csv
+  taxprofiler_databases: config/databases_taxprofiler.csv
+
+outputs:
+  taxonomy_dir: results/taxprofiler
+  mag_dir: results/mag
+  report_dir: results/report
+
+interpretation:
+  medium_quality_mag_min_completeness: 50
+  medium_quality_mag_max_contamination: 10
+  high_quality_mag_min_completeness: 90
+  high_quality_mag_max_contamination: 5
+  target_marker_groups:
+    - ammonia_oxidation
+    - nitrogen_cycling
+    - carbon_fixation
+    - sulfur_metabolism
+    - phosphorus_acquisition
+    - stress_response
+
+automation:
+  method_radar_report: results/report/method_radar.md
+  methods_audit_report: results/report/methods_audit.md
+  adoption_stages:
+    - watch
+    - benchmark
+    - optional
+    - default

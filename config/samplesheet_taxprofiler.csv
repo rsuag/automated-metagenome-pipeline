@@ -1,0 +1,5 @@
+sample,run_accession,instrument_platform,fastq_1,fastq_2,fasta
+M01,M01_lane1,ILLUMINA,data/M01_R1.fastq.gz,data/M01_R2.fastq.gz,
+M02,M02_lane1,ILLUMINA,data/M02_R1.fastq.gz,data/M02_R2.fastq.gz,
+M03,M03_lane1,ILLUMINA,data/M03_R1.fastq.gz,data/M03_R2.fastq.gz,
+
