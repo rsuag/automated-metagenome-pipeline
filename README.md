@@ -1,18 +1,18 @@
 # Automated Metagenome Pipeline
 
-一个面向公共复用的全自动宏基因组分析平台：把成熟流程、顶刊常用分析、方法雷达、质量审计和可解释报告放到同一套入口里。目标不是替代 `nf-core/mag` 或 `nf-core/taxprofiler`，而是在它们之上补齐“从原始数据到论文级结果”的自动决策、检查和持续更新能力。
+A reusable metagenomics analysis scaffold that brings established workflows, commonly used analyses, method tracking, quality audits, and interpretable reports together. It builds on `nf-core/mag` and `nf-core/taxprofiler` with checks and decisions from raw data through publication-ready results.
 
 ## Why This Exists
 
-很多宏基因组流程能跑，但使用者仍然要自己判断：
+Even with a working metagenomics workflow, users still need to decide:
 
-- 样本表、数据库、宿主过滤、共组装分组是否合理。
-- 应该选择哪些分类、binning、MAG QC、功能注释和丰度工具。
-- 新的顶刊方法或工具是否值得纳入流程。
-- 哪些结果能支持机制解释，哪些只能说是功能潜力或相关性。
-- 最终报告是否足够透明，别人能否快速复现。
+- Whether samplesheets, databases, host filtering, and co-assembly groups are appropriate.
+- Which taxonomy, binning, MAG QC, functional annotation, and abundance tools to use.
+- Whether a new method or tool merits adoption.
+- Which results support a mechanistic interpretation and which show only potential or association.
+- Whether the final report is transparent enough to reproduce.
 
-这个项目把这些判断做成可检查的自动化模块，让新用户能更快上手，让高级用户能保留可追踪、可升级、可审计的分析路径。
+This project turns those decisions into inspectable workflow modules, with a traceable analysis path for both new and experienced users.
 
 ## Main Workflow
 
